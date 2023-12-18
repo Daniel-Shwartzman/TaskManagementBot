@@ -5,7 +5,7 @@ from telebot import types
 from telebot_calendar import Calendar, CallbackData, ENGLISH_LANGUAGE
 import datetime
 
-token = '6523477120:AAGXPr7GcDwAqulqNNZ2nnolBRkh9hIhCK4'
+token = 'TOKEN'
 bot = telebot.TeleBot('TOKEN')
 calendar = Calendar(language=ENGLISH_LANGUAGE)
 calendar_1 = CallbackData('calendar_1', 'action', 'year', 'month', 'day')
