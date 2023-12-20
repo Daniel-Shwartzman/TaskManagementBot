@@ -12,7 +12,7 @@ The Task Management Bot is a serverless application designed to assist in task m
 ### Built With
 The project is built with Python, AWS Lambda, AWS API Gateway, AWS CloudWatch Logs, Webhook:
 
-[![Python][Python]][Python-url] [![AWS Lambda][AWS Lambda]][lambda-url] [![API Gateway][API Gatewa]][api-gateway-url] [![CloudWatch][CloudWatch]][cloudwatch-url]
+[![Python][Python]][Python-url]  [![AWS Lambda][AWS Lambda]][lambda-url]  [![API Gateway][API Gateway]][api-gateway-url]  [![CloudWatch][CloudWatch]][cloudwatch-url]
 
 
 <!-- Getting Started Section -->
@@ -41,32 +41,62 @@ To get started, follow the steps below:
    pip install -r requirements.txt
     ```
 
-### Usage
+### Setup
+## AWS Lambda
+1. Open the AWS Lambda Console:
+   - Go to the AWS Lambda Console.
+     
+2. Create a Lambda Function:
+   - Click the "Create function" button.
+     
+3. Select Author from Scratch:
+   - Choose "Author from scratch."
+     
+4.Configure the Basic Information:
+  - Function Name: Enter a unique name for your function.
+  - Runtime: Choose the runtime for your function (e.g., Python, Node.js).
+  - Role: Choose an existing role or create a new one with basic Lambda permissions.
 
-1. Run the application:
-   ```bash
-   python3 app.py
-    ```
+5.Click "Create Function":
+  - After configuring the basic information, click the "Create function" button.
 
-2. Open your web browser and navigate to http://localhost:5000/ to access the monitoring dashboard. (username: admin ; password: admin)
-3. Monitor your system's CPU and memory usage in real-time and view historical data for analysis.
+## AWS API Gateway
+1.Open the API Gateway Console:
+  - Go to the API Gateway Console.
+    
+2.Create a New API:
+  - Click the "Create API" button.
+    
+3.Choose "HTTP API":
 
-<!-- Docker Section -->
-### Docker image
-[![Docker][Docker]][Docker-url]
-1. Run this command to build a Docker image
-```bash
-sudo docker built -t <image-name> .
+4.Configure Your API:
+  - Enter a name for your API.
+  - Optionally, add a description.
+  - Click the "Create API" button.
+
+
+## Webhook
+```bat
+Invoke-RestMethod -Uri "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invoke_URL>" -Method Post
 ```
 
-2. To start the Flask server run this command
 ```bash
-docker run -p 5000:5000 <image-name>
-``` 
+curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invoke_URL>"
+```
 
-This will start the Flask server in a docker conatiner on your localhost. \
-Navigate to [http://localhost:5000/](http://localhost:5000/) on your browser to access the application. \
-(username: admin ; password: admin)
+## Deployment Package
+1. Copy bot.py and paste it in Lambda.
+2. Config webhook
+3. Click deploy
+4. Run a test (optinal)
+
+
+## Notes
+1. Make sure the lambda handler is your module name.lamda_handler (ex. bot.lamda_handler)
+2. Make sure you set your API Gateway as HTTP API and POST
+3. Don't forget to config the webhook
+
+
 
 ### Screenshots
 ![Screenshot](static/images/login-screenshot.png)
