@@ -14,7 +14,7 @@ The Task Management Bot is a serverless application designed to assist in task m
 ### Built With
 The project is built with Python, AWS Lambda, AWS API Gateway, AWS CloudWatch Logs:
 
-[![Python][Python]][Python-url]  [![AWS Lambda][AWS Lambda]][lambda-url]  [![API Gateway][API Gateway]][api-gateway-url]  [![CloudWatch][CloudWatch]][cloudwatch-url]
+[![Python][Python]][Python-url]     [![AWS Lambda][AWS Lambda]][lambda-url]     [![API Gateway][API Gateway]][api-gateway-url]     [![CloudWatch][CloudWatch]][cloudwatch-url]
 
 
 
