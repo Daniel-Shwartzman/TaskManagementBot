@@ -118,7 +118,10 @@ curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invok
 
 
 ### Screenshots
+#### Bot's conversation:
 ![Screenshot](images/conversation.PNG)
+
+#### Architecture:
 ![Screenshot](images/Serverless.PNG)
 
 
