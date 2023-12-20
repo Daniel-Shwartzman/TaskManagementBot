@@ -118,9 +118,9 @@ curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invok
 
 
 ### Screenshots
-![Screenshot](static/images/login-screenshot.png)
-![Screenshot](static/images/dashboard-screenshot.png)
-![Screenshot](static/images/darkmode-screenshot.png)
+![Screenshot](images/conversation.PNG)
+![Screenshot](images/Serverless.PNG)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [Python]: https://img.shields.io/badge/Python-FDEE00?style=for-the-badge&labelColor=black&logo=python&logoColor=FDEE00
