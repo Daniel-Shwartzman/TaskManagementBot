@@ -108,9 +108,9 @@ curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invok
 [Python-url]: https://www.python.org
 [AWS Lambda]: https://img.shields.io/badge/AWS_Lambda-FF4F00?style=for-the-badge&labelColor=black&logo=amazon-aws&logoColor=FF4F00
 [lambda-url]: https://aws.amazon.com/lambda/?nc2=type_a
-[API Gateway]: https://icons8.com/icon/55497/rest-api
+[API Gateway]: https://img.shields.io/badge/API_Gateway-DE3163?style=for-the-badge&labelColor=black&logo=amazon-aws&logoColor=DE3163
 [api-gateway-url]: https://aws.amazon.com/api-gateway/?nc2=type_a
-[CloudWatch]: ![image](https://github.com/Daniel-Shwartzman/TaskManagementBot/assets/135250441/500830d5-dd61-4dfc-a36a-15cf91492737)
+[CloudWatch]: https://img.shields.io/badge/CloudWatch-DE3163?style=for-the-badge&labelColor=black&logo=amazon-aws&logoColor=DE3163
 [cloudwatch-url]: https://aws.amazon.com/cloudwatch/?nc2=type_a
 
 
