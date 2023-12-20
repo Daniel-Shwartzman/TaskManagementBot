@@ -104,13 +104,13 @@ curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invok
 ![Screenshot](static/images/darkmode-screenshot.png)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[Python]: https://img.shields.io/badge/Python-3C873A?style=for-the-badge&labelColor=black&logo=python&logoColor=3C873A
+[Python]: https://img.shields.io/badge/Python-FDEE00?style=for-the-badge&labelColor=black&logo=python&logoColor=FDEE00
 [Python-url]: https://www.python.org
 [AWS Lambda]: https://img.shields.io/badge/AWS_Lambda-FF4F00?style=for-the-badge&labelColor=black&logo=amazon-aws&logoColor=FF4F00
 [lambda-url]: https://aws.amazon.com/lambda/?nc2=type_a
 [API Gateway]: https://img.shields.io/badge/API_Gateway-DE3163?style=for-the-badge&labelColor=black&logo=amazon-aws&logoColor=DE3163
 [api-gateway-url]: https://aws.amazon.com/api-gateway/?nc2=type_a
-[CloudWatch]: https://img.shields.io/badge/CloudWatch-DE3163?style=for-the-badge&labelColor=black&logo=amazon-aws&logoColor=DE3163
+[CloudWatch]: https://img.shields.io/badge/CloudWatch-D0417E?style=for-the-badge&labelColor=black&logo=amazon-aws&logoColor=D0417E
 [cloudwatch-url]: https://aws.amazon.com/cloudwatch/?nc2=type_a
 
 
