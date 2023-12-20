@@ -3,10 +3,12 @@
 
 The Task Management Bot is a serverless application designed to assist in task management. It is deployed using AWS Lambda, API Gateway for endpoint management, CloudWatch Logs for logging, and a webhook for communication.
 
+
 ### Key features of this project:
 - Serverless architecture
 - AWS
 - Python
+
 
 
 ### Built With
@@ -15,15 +17,20 @@ The project is built with Python, AWS Lambda, AWS API Gateway, AWS CloudWatch Lo
 [![Python][Python]][Python-url]  [![AWS Lambda][AWS Lambda]][lambda-url]  [![API Gateway][API Gateway]][api-gateway-url]  [![CloudWatch][CloudWatch]][cloudwatch-url]
 
 
+
+
 <!-- Getting Started Section -->
 ## Getting Started
 To get started, follow the steps below:
+
+
 <!-- Requirements Section -->
 ### Requirements
 
 - Python 
 - requests
 - AWS account
+
   
 <!-- Installation Section -->
 ### Installation
@@ -41,9 +48,11 @@ To get started, follow the steps below:
    pip install -r requirements.txt
     ```
 
+
 ## Setup
 
 ### AWS Lambda
+
 1. Open the AWS Lambda Console:
    - Go to the AWS Lambda Console.
      
@@ -62,6 +71,7 @@ To get started, follow the steps below:
   - After configuring the basic information, click the "Create function" button.
 
 ### AWS API Gateway
+
 1.Open the API Gateway Console:
   - Go to the API Gateway Console.
     
@@ -76,6 +86,7 @@ To get started, follow the steps below:
   - Click the "Create API" button.
 
 
+
 ### Webhook
 
 #### For Windows:
@@ -88,6 +99,7 @@ Invoke-RestMethod -Uri "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your
 curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invoke_URL>"
 ```
 
+
 ## Deployment Package
 1. Copy bot.py and paste it in Lambda.
 2. Config webhook
@@ -95,10 +107,12 @@ curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invok
 4. Run a test (optinal)
 
 
+
 ## Notes
 1. Make sure the lambda handler is your module name.lamda_handler (ex. bot.lamda_handler)
 2. Make sure you set your API Gateway as HTTP API and POST
 3. Don't forget to config the webhook
+
 
 
 
