@@ -10,7 +10,7 @@ The Task Management Bot is a serverless application designed to assist in task m
 
 
 ### Built With
-The project is built with Python, AWS Lambda, AWS API Gateway, AWS CloudWatch Logs, Webhook:
+The project is built with Python, AWS Lambda, AWS API Gateway, AWS CloudWatch Logs:
 
 [![Python][Python]][Python-url]  [![AWS Lambda][AWS Lambda]][lambda-url]  [![API Gateway][API Gateway]][api-gateway-url]  [![CloudWatch][CloudWatch]][cloudwatch-url]
 
@@ -41,8 +41,9 @@ To get started, follow the steps below:
    pip install -r requirements.txt
     ```
 
-### Setup
-## AWS Lambda
+## Setup
+
+### AWS Lambda
 1. Open the AWS Lambda Console:
    - Go to the AWS Lambda Console.
      
@@ -60,7 +61,7 @@ To get started, follow the steps below:
 5.Click "Create Function":
   - After configuring the basic information, click the "Create function" button.
 
-## AWS API Gateway
+### AWS API Gateway
 1.Open the API Gateway Console:
   - Go to the API Gateway Console.
     
@@ -75,11 +76,14 @@ To get started, follow the steps below:
   - Click the "Create API" button.
 
 
-## Webhook
+### Webhook
+
+#### For Windows:
 ```bat
 Invoke-RestMethod -Uri "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invoke_URL>" -Method Post
 ```
 
+#### For Linux:
 ```bash
 curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Your_API_Invoke_URL>"
 ```
