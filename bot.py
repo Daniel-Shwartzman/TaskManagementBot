@@ -1,15 +1,15 @@
 import json
-import requests
-from flask import Flask, request
-from telebot import TeleBot, types
+from asyncio.log import logger
+import telebot
+from telebot import types
 from telebot_calendar import Calendar, CallbackData, ENGLISH_LANGUAGE
 import datetime
 
-app = Flask(__name__)
-bot = TeleBot('TOKEN')
+bot = telebot.TeleBot('TOKEN')
 calendar = Calendar(language=ENGLISH_LANGUAGE)
 calendar_1 = CallbackData('calendar_1', 'action', 'year', 'month', 'day')
 now = datetime.datetime.now()
+# a dictionary that stores all tasks
 todos = {}
 
 # bot start and button output
@@ -116,17 +116,27 @@ def add_todo(chat_id, c_date, message):
     else:
         todos[chat_id] = {c_date: [task]}
 
-@app.route('/' + bot.token, methods=['POST'])
-def getMessage():
-   bot.process_new_updates([types.Update.de_json(request.stream.read().decode("utf-8"))])
-   return "!", 200
 
-@app.route("/")
-def webhook():
-   bot.remove_webhook()
-   bot.set_webhook(url='https://api.telegram.org/bot6523477120:AAGXPr7GcDwAqulqNNZ2nnolBRkh9hIhCK4/setwebhook')
-   return "!", 200
+bot.polling(none_stop=True)
 
 def lambda_handler(event, context):
-   return app(event, context)
-
+    try:
+        # Extract the relevant information from the event
+        update = json.loads(event['body'])
+        
+        # Handle the Telegram bot logic based on the update
+        bot.process_new_updates([types.Update.de_json(update)])
+        
+        # Return a response to the client (if using API Gateway)
+        response = {
+            "statusCode": 200,
+            "body": "OK"
+        }
+    except Exception as e:
+        logger.error(f"Error processing update: {e}")
+        response = {
+            "statusCode": 500,
+            "body": "Internal Server Error"
+        }
+    
+    return response
