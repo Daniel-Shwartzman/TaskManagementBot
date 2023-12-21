@@ -38,8 +38,8 @@ To get started, follow the steps below:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Daniel-Shwartzman/task-management-bot.git
-   cd task-management-bot
+   git clone https://github.com/Daniel-Shwartzman/TaskManagementBot.git
+   cd TaskManagementBot
     ```
 
 2. Install the required dependencies:
