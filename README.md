@@ -63,25 +63,25 @@ To get started, follow the steps below:
 3. Select Author from Scratch:
    - Choose "Author from scratch."
      
-4.Configure the Basic Information:
+4. Configure the Basic Information:
   - Function Name: Enter a unique name for your function.
   - Runtime: Choose the runtime for your function (e.g., Python, Node.js).
   - Role: Choose an existing role or create a new one with basic Lambda permissions.
 
-5.Click "Create Function":
+5. Click "Create Function":
   - After configuring the basic information, click the "Create function" button.
 
 ### AWS API Gateway
 
-1.Open the API Gateway Console:
+1. Open the API Gateway Console:
   - Go to the API Gateway Console.
     
-2.Create a New API:
+2. Create a New API:
   - Click the "Create API" button.
     
-3.Choose "HTTP API":
+3. Choose "HTTP API":
 
-4.Configure Your API:
+4. Configure Your API:
   - Enter a name for your API.
   - Optionally, add a description.
   - Click the "Create API" button.
